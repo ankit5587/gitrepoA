@@ -19,9 +19,6 @@ public class AppTest
     	System.out.println("hi i am in app test");
     }
 
-    /**
-     * Rigourous Test :-)
-     */
     @Test
 	public void testApp()
     {
