@@ -4,7 +4,6 @@
   <test name="Test">
     <classes>
       <class name="Demo.Sele.AppTest"/>
-       <class name="Demo.Sele.DemoClass"/>
        
 <!--        Hi my name is ankit -->
     </classes>
