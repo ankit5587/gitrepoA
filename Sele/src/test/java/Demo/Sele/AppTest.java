@@ -10,13 +10,13 @@ public class AppTest
 {
 	
 	public static void main(String[] args) {
-		System.out.println("hi this is a t3t");
+		System.out.println("hi this is a test");
 	}
 
 	
     public AppTest( String testName )
     {
-    	System.out.println("hi i am in apptest");
+    	System.out.println("hi i am in app test");
     }
 
     /**
