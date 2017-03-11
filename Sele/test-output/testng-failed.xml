@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Page Object test example]">
+  <test name="sample Test(failed)">
+    <classes>
+      <class name="com.pack.common.test.BasePageTest">
+        <methods>
+          <include name="verifyMobileTab"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- com.pack.common.test.BasePageTest -->
+      <class name="com.pack.common.test.MobileTabTest">
+        <methods>
+          <include name="varifyMobRecharge"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- com.pack.common.test.MobileTabTest -->
+    </classes>
+  </test> <!-- sample Test(failed) -->
+</suite> <!-- Failed suite [Page Object test example] -->
