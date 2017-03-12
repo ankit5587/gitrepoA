@@ -1,31 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>Demo</groupId>
-  <artifactId>Sele</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+	<groupId>Demo</groupId>
+	<artifactId>Sele</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 
 
-<!-- Hi i added a extra comment  -->
-  <name>Sele</name>
-  <url>http://maven.apache.org</url>
+	<!-- Hi i added a extra comment -->
+	<name>Sele</name>
+	<url>http://maven.apache.org</url>
 
-  <properties> 
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <suiteXmlFile>src/main/java/testng.xml</suiteXmlFile>
-  </properties>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<suiteXmlFile>src/main/java/testng.xml</suiteXmlFile>
+	</properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-    
-    <dependency>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
@@ -50,7 +51,7 @@
 			<version>6.8</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -71,47 +72,54 @@
 			<version>1.2.5</version>
 		</dependency>
 
-  </dependencies>
-  
-  
-<build>
+		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>1.2.5</version>
+		</dependency>
 
-<plugins>
- 
-<plugin>
-
-<groupId>org.apache.maven.plugins</groupId>
-<artifactId>maven-compiler-plugin</artifactId>
-<version>3.0</version>
-
-<configuration>
-<compilerVersion>1.8</compilerVersion>
-<source>1.6</source>
-<target>1.6</target>
-</configuration>
-</plugin>
- 
-<plugin>
-<groupId>org.apache.maven.plugins</groupId>
-<artifactId>maven-surefire-plugin</artifactId>
-<version>2.17</version>
-
-<configuration>
- 	
-<suiteXmlFiles>
-<suiteXmlFile>src/main/java/testng.xml</suiteXmlFile>
-</suiteXmlFiles>
- </configuration>
- 
- 
- 
-</plugin>
- 
+	</dependencies>
 
 
-</plugins>
- 
-</build>
-	
+	<build>
+
+		<plugins>
+
+			<plugin>
+
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+
+				<configuration>
+					<compilerVersion>1.8</compilerVersion>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.17</version>
+
+				<configuration>
+
+					<suiteXmlFiles>
+						<suiteXmlFile>src/main/java/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+
+
+
+			</plugin>
+
+
+
+		</plugins>
+
+	</build>
+
 
 </project>
